@@ -45,8 +45,9 @@ app.use( async(req, res, next) => {
 })
 
 app.get('/', async (req, res) => {
-  const people = await req.dbo.getPeople.many()
-  res.send({ people })
+  const person = await req.dbo.getPeople.one({ids: [1]})
+  const people = await req.dbo.getPeople.many({})
+  res.send({ person, people })
 })
 
 const port = process.env.PORT || 3000
