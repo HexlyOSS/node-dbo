@@ -1,12 +1,33 @@
 {
-  "name": "@hexly/dbo",
-  "version": "0.0.10",
-  "description": "",
+  "name": "@hexlyoss/dbo",
+  "author": "Hexly",
   "main": "index.js",
+  "homepage": "https://github.com/HexlyOSS/node-dbo#readme",
+  "license": "ISC",
+  "version": "0.0.15",
+  "bugs": {
+    "url": "https://github.com/HexlyOSS/node-dbo/issues"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lib:prepare": "install-self-peers -- --ignore-scripts",
-    "lib:publish": "npm --no-git-tag-version version patch && npm publish --access public"
+    "lib:prepare": " ./node_modules/.bin/install-self-peers --npm -- --ignore-scripts",
+    "lib:publish": "npm --no-git-tag-version version patch && npm publish --access public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "camelize": "^1.0.0",
+    "glob": "^7.1.6",
+    "pg": "^7.17.0",
+    "pg-sql2": "^2.2.3",
+    "pgpass": "^1.0.2",
+    "ramda": "^0.25.0",
+    "yesql": "^3.2.2"
+  },
+  "deprecated": false,
+  "description": "",
+  "devDependencies": {
+    "@team-griffin/install-self-peers": "1.1.1",
+    "jest": "^24.9.0"
   },
   "peerDependencies": {
     "camelize": "^1.0.0",
@@ -20,17 +41,5 @@
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/HexlyOSS/node-dbo.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HexlyOSS/node-dbo/issues"
-  },
-  "homepage": "https://github.com/HexlyOSS/node-dbo#readme",
-  "devDependencies": {
-    "@team-griffin/install-self-peers": "^1.1.1"
-  },
-  "dependencies": {
-    "jest": "^24.0.0"
   }
 }
