@@ -4,7 +4,7 @@
   "main": "index.js",
   "homepage": "https://github.com/HexlyOSS/node-dbo#readme",
   "license": "ISC",
-  "version": "0.0.15",
+  "version": "0.2.1",
   "bugs": {
     "url": "https://github.com/HexlyOSS/node-dbo/issues"
   },
@@ -18,10 +18,11 @@
     "camelize": "^1.0.0",
     "glob": "^7.1.6",
     "pg": "^7.17.0",
+    "pg-promise": "10.3.2",
     "pg-sql2": "^2.2.3",
     "pgpass": "^1.0.2",
     "ramda": "^0.25.0",
-    "yesql": "^3.2.2"
+    "yesql": "4.1.0"
   },
   "deprecated": false,
   "description": "",
@@ -36,7 +37,7 @@
     "pg-sql2": "^2.2.1",
     "pgpass": "^1.0.2",
     "ramda": "^0.25.0",
-    "yesql": "^3.2.2"
+    "yesql": "4.1.0"
   },
   "repository": {
     "type": "git",
