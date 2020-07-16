@@ -17,7 +17,7 @@
   "dependencies": {
     "camelize": "1.0.0",
     "glob": "7.1.6",
-    "lodash": "4.17.15",
+    "lodash": "4.17.19",
     "pg": "^7.17.0",
     "pg-promise": "10.3.2",
     "pg-sql2": "^2.2.3",
